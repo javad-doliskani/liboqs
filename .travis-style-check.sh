@@ -1,6 +1,6 @@
 #!/bin/bash
 
-make prettyprint | grep -q Formatted
+clang-format -style=file -output-replacements-xml src/*.h src/*/*.h src/*/*.c  | grep -q offset
 STATUS=(${PIPESTATUS[*]})
 
 if [ ${STATUS[1]} == 0 ]; then 
