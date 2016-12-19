@@ -12,7 +12,7 @@ matrix:
         - ubuntu-toolchain-r-test
         packages:
         - gcc-4.8
-        - clang-format
+        - clang-format-3.4
   - os: linux
     compiler: gcc
     env: CC_OQS=gcc-4.9
@@ -22,7 +22,7 @@ matrix:
         - ubuntu-toolchain-r-test
         packages:
         - gcc-4.9
-        - clang-format
+        - clang-format-3.4
   - os: linux
     compiler: gcc
     env: CC_OQS=gcc-5
@@ -32,7 +32,7 @@ matrix:
         - ubuntu-toolchain-r-test
         packages:
         - gcc-5
-        - clang-format
+        - clang-format-3.4
   - os: linux
     compiler: gcc
     env: CC_OQS=gcc-6 USE_OPENSSL=1
@@ -43,7 +43,7 @@ matrix:
         packages:
         - gcc-6
         - libssl-dev
-        - clang-format
+        - clang-format-3.4
   - os: osx
     compiler: clang
     env: CC_OQS=clang AES_NI=0 USE_OPENSSL=1
